@@ -1,0 +1,50 @@
+cadastro = {}
+
+def adicionar():
+  id = int(input("Digite o ID do usuário: "))
+  nome = input("Digite o nome do usuário: ")
+  cadastro[id] = nome
+  print(f"Usuário {nome} cadastrado com sucesso.")
+
+def visualizar():
+  if not cadastro:
+    print("Nenhum usuário cadastrado.")
+  else:
+    for id, nome in cadastro.items():
+      print(f"ID: {id} - Nome: {nome}")
+
+def editar():
+  id = int(input("Digite o ID que deseja editar: "))
+  if id in cadastro:
+    novo_nome = input("Digite o novo nome: ")
+    cadastro[id] = novo_nome
+    print(f"Usuário atualizado para {novo_nome}")
+  else:
+    print("Usuário não encontrado")
+
+def excluir():
+  id = int(input("Digite o ID do usuário que deseja excluir"))
+  if id in cadastro:
+    del cadastro[id]
+    print("Usuário excluido com sucesso")
+  else:
+    print("Usuário não encontrado")
+
+
+while True:
+  print("\n1. Adicionar\n2. Visualizar\n3. Editar\n4. Excluir\n5. Sair")
+
+  opcao = input("Escolha uma opção: ")
+
+  if opcao == "1":
+    adicionar()
+  elif opcao == "2":
+    visualizar()
+  elif opcao == "3":
+    editar()
+  elif opcao == "4":
+    excluir()
+  elif opcao == "5":
+    break
+  else:
+    print("Opção inválida, tente novamente.")
