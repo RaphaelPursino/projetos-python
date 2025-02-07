@@ -1,0 +1,19 @@
+{
+  "posts": [
+    {
+      "id": "f780",
+      "title": "Post atualizado",
+      "body": "Conteúdo atualizado"
+    },
+    {
+      "id": "f580",
+      "title": "Post Atualizado 2",
+      "body": "Conteúdo do post foi atualizado 2"
+    },
+    {
+      "id": "f880",
+      "title": "Post Atualizado 3",
+      "body": "Conteúdo do post foi atualizado 3"
+    }
+  ]
+}
