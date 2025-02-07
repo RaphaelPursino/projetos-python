@@ -1,13 +1,15 @@
 import requests
 
 # Sua chave da API (substitua pelo valor correto)
-API_KEY = "6bbd181739c72f918fa76a15124ab7ec"
+
+#API_KEY = url_apikey
 
 # Cidade que você deseja buscar o clima
 cidade = "Guarapari"
 
 # URL base da API
-url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&units=metric&lang=pt"
+
+#url = f"http://api.openweathermap.org/data/2.5/weather?q={cidade}&appid={API_KEY}&units=metric&lang=pt"
 
 # Fazendo a requisição GET
 response = requests.get(url)
